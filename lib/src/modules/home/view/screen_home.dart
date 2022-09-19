@@ -11,12 +11,17 @@ class _ScreenHomeState extends State<ScreenHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 32, 31, 31),
       appBar: AppBar(
         backgroundColor: Colors.greenAccent,
-        title: const Text(
-          'Home',
-          style: TextStyle(
-              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 26.0),
+        title: const Center(
+          child: Text(
+            'Home Tea',
+            style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+                fontSize: 26.0),
+          ),
         ),
         elevation: 0.0,
       ),
