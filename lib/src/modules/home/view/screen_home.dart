@@ -25,6 +25,22 @@ class _ScreenHomeState extends State<ScreenHome> {
         ),
         elevation: 0.0,
       ),
+      body: Column(
+        children: [
+          Container(
+            height: MediaQuery.of(context).size.height * 0.24,
+            width: double.infinity,
+            decoration: const BoxDecoration(
+              color: Colors.greenAccent,
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(50),
+                bottomRight: Radius.circular(50),
+              ),
+            ),
+          ),
+          const Text('Oxe'),
+        ],
+      ),
     );
   }
 }
