@@ -32,6 +32,7 @@ class _SplashViewState extends State<SplashView> {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Colors.greenAccent,
+      body: Text('Tome cha viu.'),
     );
   }
 }
