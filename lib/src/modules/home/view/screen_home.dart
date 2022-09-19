@@ -1,5 +1,4 @@
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/material.dart';
 
 class ScreenHome extends StatefulWidget {
   const ScreenHome({super.key});
@@ -11,6 +10,16 @@ class ScreenHome extends StatefulWidget {
 class _ScreenHomeState extends State<ScreenHome> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.greenAccent,
+        title: const Text(
+          'Home',
+          style: TextStyle(
+              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 26.0),
+        ),
+        elevation: 0.0,
+      ),
+    );
   }
 }
