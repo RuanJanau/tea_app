@@ -8,22 +8,16 @@ class ScreenHome extends StatefulWidget {
 }
 
 class _ScreenHomeState extends State<ScreenHome> {
+  get kDefaultPadding => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 32, 31, 31),
       appBar: AppBar(
-        backgroundColor: Colors.greenAccent,
-        title: const Center(
-          child: Text(
-            'Home Tea',
-            style: TextStyle(
-                color: Colors.black,
-                fontWeight: FontWeight.bold,
-                fontSize: 26.0),
-          ),
-        ),
         elevation: 0.0,
+        backgroundColor: Colors.greenAccent,
+        leading: const Icon(Icons.menu),
       ),
       body: Column(
         children: [
@@ -37,8 +31,14 @@ class _ScreenHomeState extends State<ScreenHome> {
                 bottomRight: Radius.circular(50),
               ),
             ),
+            child: Stack(children: [
+              Positioned(
+                child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                ),
+              ),
+            ]),
           ),
-          const Text('Oxe'),
         ],
       ),
     );
